@@ -67,6 +67,7 @@ public:
             
             for(size_t j = 0; j < aList[i].size(); j++){
                 matrix[i][aList[i][j].first] = aList[i][j].second;
+                matrix[aList[i][j].first][i] = aList[i][j].second;
             }
             matrix[i][i] = 0;
         } 

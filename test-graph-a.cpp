@@ -20,6 +20,7 @@ int main()
     }
     cout << "Graph:\n";
     graph.print();
+    graph.print_for_website();
     vector<bool> visited(graph.get_quantity_vertex());
     vector<int> prev;
     dfs(2, visited, prev, graph);
